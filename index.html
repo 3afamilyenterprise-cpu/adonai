@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adonai AI Platform</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { 
+            background-color: #0d0d0d; 
+            color: white; 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        }
+        .card { 
+            background-color: #1a1a1a; 
+            border: 1px solid #2a2a2a; 
+            transition: all 0.3s;
+        }
+        .card:hover { 
+            border-color: #a78bfa;
+            background-color: #242424;
+        }
+        .sidebar { 
+            border-right: 1px solid #2a2a2a;
+            background-color: #0f0f0f;
+        }
+        .icon-box {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            font-size: 20px;
+        }
+        .icon-purple {
+            background: linear-gradient(135deg, #a855f7 0%, #7c3aed 100%);
+        }
+        .new-badge {
+            background: linear-gradient(135deg, #a855f7 0%, #7c3aed 100%);
+            font-size: 10px;
+            padding: 2px 6px;
+            border-radius: 4px;
+            display: inline-block;
+            margin-left: 6px;
+        }
+        .section-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-top: 24px;
+            margin-bottom: 16px;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body class="flex min-h-screen">
+
+    <!-- SIDEBAR -->
+    <aside class="w-64 p-6 sidebar hidden md:block">
+        <h1 class="text-2xl font-bold mb-8 bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text text-transparent">ADONAI</h1>
+        
+        <div class="space-y-3 text-gray-300 text-sm mb-6">
+            <div class="flex items-center gap-3 hover:text-white cursor-pointer hover:bg-gray-900 p-2 rounded">
+                <i class="fas fa-image text-purple-400"></i>
+                <span>Cipta Imej</span>
+            </div>
+            <div class="flex items-center gap-3 hover:text-white cursor-pointer hover:bg-gray-900 p-2 rounded">
+                <span class="text-lg font-bold">G</span>
+                <span>Google Flow</span>
+                <span class="new-badge text-white">New</span>
+            </div>
+            <div class="flex items-center gap-3 hover:text-white cursor-pointer hover:bg-gray-900 p-2 rounded">
+                <i class="fas fa-wand-magic-sparkles text-purple-400"></i>
+                <span>Create Content</span>
+            </div>
+            <div class="flex items-center gap-3 hover:text-white cursor-pointer hover:bg-gray-900 p-2 rounded">
+                <i class="fas fa-clapperboard text-purple-400"></i>
+                <span>Create Storyboard</span>
+            </div>
+            <div class="flex items-center gap-3 hover:text-white cursor-pointer hover:bg-gray-900 p-2 rounded">
+                <i class="fas fa-lightbulb text-purple-400"></i>
+                <span>Create Storyline</span>
+            </div>
+            <div class="flex items-center gap-3 hover:text-white cursor-pointer hover:bg-gray-900 p-2 rounded">
+                <i class="fas fa-mobile text-purple-400"></i>
+                <span>Create AI UGC</span>
+            </div>
+            <div class="flex items-center gap-3 hover:text-white cursor-pointer hover:bg-gray-900 p-2 rounded">
+                <i class="fas fa-th text-purple-400"></i>
+                <span>Create StoryGrid</span>
+            </div>
+            <div class="flex items-center gap-3 hover:text-white cursor-pointer hover:bg-gray-900 p-2 rounded">
+                <i class="fas fa-image text-purple-400"></i>
+                <span>Galeri</span>
+            </div>
+            <div class="flex items-center gap-3 hover:text-white cursor-pointer hover:bg-gray-900 p-2 rounded">
+                <i class="fas fa-video text-purple-400"></i>
+                <span>Video Maker (Flow)</span>
+            </div>
+        </div>
+
+        <hr class="border-gray-800 my-4">
+
+        <div class="mb-4">
+            <p class="text-xs uppercase text-gray-500 font-semibold mb-3">PRO AI</p>
+            <div class="flex items-center gap-3 hover:text-white cursor-pointer hover:bg-gray-900 p-2 rounded text-sm">
+                <i class="fas fa-crown text-purple-400"></i>
+                <span>Affiliate Pro AI</span>
+            </div>
+        </div>
+
+        <div class="flex items-center gap-3 hover:text-white cursor-pointer hover:bg-gray-900 p-2 rounded text-sm">
+            <i class="fas fa-shield text-purple-400"></i>
+            <span>Report unsafe</span>
+        </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="flex-1 p-8 overflow-y-auto">
+        <div class="max-w-6xl">
+            <!-- HEADER -->
+            <div class="mb-12">
+                <h1 class="text-4xl font-bold mb-2">Adonai AI Platform</h1>
+                <p class="text-gray-400">Semua alat kreatif AI dalam satu platform.</p>
+            </div>
+
+            <!-- SECTION: ALAT CIPTA KANDUNGAN -->
+            <div class="mb-12">
+                <h2 class="section-title">Alat Cipta Kandungan</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <!-- Cipta Imej -->
+                    <div class="card p-6 rounded-xl cursor-pointer">
+                        <div class="flex items-start gap-4">
+                            <div class="icon-box icon-purple">
+                                <i class="fas fa-image text-white"></i>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="font-bold text-lg">Cipta Imej</h3>
+                                <p class="text-sm text-gray-400">Jana imej AI berkualiti tinggi</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Google Flow -->
+                    <div class="card p-6 rounded-xl cursor-pointer">
+                        <div class="flex items-start gap-4">
+                            <div class="icon-box" style="background: linear-gradient(135deg, #ea4335 0%, #fbbc04 50%, #34a853 100%);">
+                                <span class="text-white font-bold">G</span>
+                            </div>
+                            <div class="flex-1">
+                                <div class="flex items-center gap-2">
+                                    <h3 class="font-bold text-lg">Google Flow</h3>
+                                    <span class="new-badge text-white">New</span>
+                                </div>
+                                <p class="text-sm text-gray-400">AI video generator by Google</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Create Content -->
+                    <div class="card p-6 rounded-xl cursor-pointer">
+                        <div class="flex items-start gap-4">
+                            <div class="icon-box icon-purple">
+                                <i class="fas fa-wand-magic-sparkles text-white"></i>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="font-bold text-lg">Create Content</h3>
+                                <p class="text-sm text-gray-400">Jana kandungan pantas dengan AI</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Create Storyboard -->
+                    <div class="card p-6 rounded-xl cursor-pointer">
+                        <div class="flex items-start gap-4">
+                            <div class="icon-box icon-purple">
+                                <i class="fas fa-clapperboard text-white"></i>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="font-bold text-lg">Create Storyboard</h3>
+                                <p class="text-sm text-gray-400">Cipta storyboard secara automatik</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Create Storyline -->
+                    <div class="card p-6 rounded-xl cursor-pointer">
+                        <div class="flex items-start gap-4">
+                            <div class="icon-box icon-purple">
+                                <i class="fas fa-lightbulb text-white"></i>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="font-bold text-lg">Create Storyline</h3>
+                                <p class="text-sm text-gray-400">Bina storyline kreatif untuk projek anda</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Create AI UGC -->
+                    <div class="card p-6 rounded-xl cursor-pointer">
+                        <div class="flex items-start gap-4">
+                            <div class="icon-box icon-purple">
+                                <i class="fas fa-mobile text-white"></i>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="font-bold text-lg">Create AI UGC</h3>
+                                <p class="text-sm text-gray-400">Jana UGC AI realistik untuk promosi</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Create StoryGrid -->
+                    <div class="card p-6 rounded-xl cursor-pointer">
+                        <div class="flex items-start gap-4">
+                            <div class="icon-box icon-purple">
+                                <i class="fas fa-th text-white"></i>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="font-bold text-lg">Create StoryGrid</h3>
+                                <p class="text-sm text-gray-400">Susun cerita dalam grid visual</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Galeri -->
+                    <div class="card p-6 rounded-xl cursor-pointer">
+                        <div class="flex items-start gap-4">
+                            <div class="icon-box icon-purple">
+                                <i class="fas fa-image text-white"></i>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="font-bold text-lg">Galeri</h3>
+                                <p class="text-sm text-gray-400">Simpan dan urus hasil kreatif anda</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECTION: ALAT VIDEO -->
+            <div class="mb-12">
+                <h2 class="section-title">Alat Video</h2>
+                <div class="grid grid-cols-1 gap-4">
+                    <!-- Video Maker (Flow) -->
+                    <div class="card p-6 rounded-xl cursor-pointer">
+                        <div class="flex items-start gap-4 justify-between">
+                            <div class="flex items-start gap-4">
+                                <div class="icon-box icon-purple">
+                                    <i class="fas fa-video text-white"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="flex items-center gap-2">
+                                        <h3 class="font-bold text-lg">Video Maker (Flow)</h3>
+                                        <span class="new-badge text-white">New</span>
+                                    </div>
+                                    <p class="text-sm text-gray-400">Cipta video profesional dengan Google Flow AI</p>
+                                </div>
+                            </div>
+                            <i class="fas fa-chevron-right text-gray-600"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECTION: PRO AI -->
+            <div class="mb-12">
+                <h2 class="section-title">Pro AI</h2>
+                <div class="grid grid-cols-1 gap-4">
+                    <!-- Affiliate Pro AI -->
+                    <div class="card p-6 rounded-xl cursor-pointer">
+                        <div class="flex items-start gap-4 justify-between">
+                            <div class="flex items-start gap-4">
+                                <div class="icon-box icon-purple">
+                                    <i class="fas fa-crown text-white"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <h3 class="font-bold text-lg">Affiliate Pro AI</h3>
+                                    <p class="text-sm text-gray-400">Cari team Affiliate Pro AI</p>
+                                </div>
+                            </div>
+                            <i class="fas fa-chevron-right text-gray-600"></i>
+                        </div>
+                    </div>
+
+                    <!-- Report unsafe -->
+                    <div class="card p-6 rounded-xl cursor-pointer">
+                        <div class="flex items-start gap-4 justify-between">
+                            <div class="flex items-start gap-4">
+                                <div class="icon-box icon-purple">
+                                    <i class="fas fa-shield text-white"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <h3 class="font-bold text-lg">Report unsafe</h3>
+                                    <p class="text-sm text-gray-400">Laporkan kandungan tidak selamat</p>
+                                </div>
+                            </div>
+                            <i class="fas fa-chevron-right text-gray-600"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
